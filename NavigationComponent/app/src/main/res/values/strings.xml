@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NavigationComponent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="finish">Finish</string>
+    <string name="game_page">Game Page</string>
+    <string name="home_page">Home Page</string>
+    <string name="start">Start</string>
+    <string name="result_page">Result Page</string>
 </resources>

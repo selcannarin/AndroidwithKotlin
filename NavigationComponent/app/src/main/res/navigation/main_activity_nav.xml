@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.selcannarin.navigationcomponent.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_gamePageFragment"
+            app:destination="@id/gamePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gamePageFragment"
+        android:name="com.selcannarin.navigationcomponent.GamePageFragment"
+        android:label="fragment_game_page"
+        tools:layout="@layout/fragment_game_page" >
+        <action
+            android:id="@+id/action_gamePageFragment_to_resultPageFragment"
+            app:destination="@id/resultPageFragment"
+            app:popUpTo="@id/gamePageFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="person"
+            app:argType="com.selcannarin.navigationcomponent.Person" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultPageFragment"
+        android:name="com.selcannarin.navigationcomponent.ResultPageFragment"
+        android:label="fragment_result_page"
+        tools:layout="@layout/fragment_result_page" />
+</navigation>
