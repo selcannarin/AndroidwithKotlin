@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/AndroidwithKotlin.iml" filepath="$PROJECT_DIR$/.idea/AndroidwithKotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberGuessingGame.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberGuessingGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NumberGuessingGame.app.unitTest.iml" />
     </modules>
   </component>
 </project>
