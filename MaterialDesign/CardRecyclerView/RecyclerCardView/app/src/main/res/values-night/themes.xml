@@ -1,5 +1,5 @@
 <resources>
-    <style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
+    <style name="Theme.RecyclerCardView1" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/md_theme_dark_primary</item>
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
@@ -25,21 +25,6 @@
         <item name="colorOutline">@color/md_theme_dark_outline</item>
         <item name="colorOnSurfaceInverse">@color/md_theme_dark_inverseOnSurface</item>
         <item name="colorSurfaceInverse">@color/md_theme_dark_inverseSurface</item>
-        <item name="colorCustomColor1">#ffafd8</item>
-        <item name="colorOnCustomColor1">#5b1141</item>
-        <item name="colorCustomColor1Container">#772959</item>
-        <item name="colorOnCustomColor1Container">#ffd8e9</item>
-        <item name="harmonizeCustomColor1">true</item>
-        <item name="colorCustomColor2">#ffade3</item>
-        <item name="colorOnCustomColor2">#581149</item>
-        <item name="colorCustomColor2Container">#742a61</item>
-        <item name="colorOnCustomColor2Container">#ffd8ee</item>
-        <item name="harmonizeCustomColor2">true</item>
-        <item name="colorCustomColor3">#ffade4</item>
-        <item name="colorOnCustomColor3">#58124a</item>
-        <item name="colorCustomColor3Container">#732a62</item>
-        <item name="colorOnCustomColor3Container">#ffd7ef</item>
-        <item name="harmonizeCustomColor3">true</item>
         <item name="colorPrimaryInverse">@color/md_theme_dark_inversePrimary</item>
     </style>
 </resources>

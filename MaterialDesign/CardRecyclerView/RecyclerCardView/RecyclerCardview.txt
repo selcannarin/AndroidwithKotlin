@@ -1,1 +1,19 @@
-RECYCLER VİEW - CARD VİEW
+RECYCLER VIEW - CARD VIEW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHANGE THE THEME:
+https://m3.material.io/theme-builder#/custom
+Build a custom color scheme with this site.
+ 
