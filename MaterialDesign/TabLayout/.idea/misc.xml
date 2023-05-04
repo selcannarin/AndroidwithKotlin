@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Selcan/AndroidStudioProjects/AndroidwithKotlin/MaterialDesign/TabLayout/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Selcan/AndroidStudioProjects/AndroidwithKotlin/MaterialDesign/TabLayout/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Selcan/AndroidStudioProjects/AndroidwithKotlin/MaterialDesign/TabLayout/app/src/main/res/layout/first_fragment_layout.xml" value="0.153125" />
+        <entry key="..\:/Users/Selcan/AndroidStudioProjects/AndroidwithKotlin/MaterialDesign/TabLayout/app/src/main/res/layout/second_fragment_layout.xml" value="0.153125" />
+        <entry key="..\:/Users/Selcan/AndroidStudioProjects/AndroidwithKotlin/MaterialDesign/TabLayout/app/src/main/res/layout/third_fragment_layout.xml" value="0.153125" />
       </map>
     </option>
   </component>
