@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = ViewPageAdapter(this)
         binding.viewPager2.adapter = adapter
 
+
         fragmentTitleList.add("1")
         fragmentTitleList.add("2")
         fragmentTitleList.add("3")
