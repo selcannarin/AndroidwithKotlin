@@ -1,6 +1,7 @@
 package com.selcannarin.studentnotesapp
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,7 +35,9 @@ class NotesAdapter (private val context: Context, private val notesList: ArrayLi
         holder.textViewNote2.text = note.note2.toString()
 
         holder.cardViewNotes.setOnClickListener{
-
+            val intent = Intent(context,NoteDetailsActivity::class.java)
+            intent.putExtra("object",note)
+            context.startActivity(intent)
         }
     }
 

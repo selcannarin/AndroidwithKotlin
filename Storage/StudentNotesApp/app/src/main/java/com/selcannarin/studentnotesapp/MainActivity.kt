@@ -29,5 +29,15 @@ class MainActivity : AppCompatActivity() {
         binding.fab.setOnClickListener{
             startActivity(Intent(this@MainActivity,SaveNoteActivity::class.java))
         }
+
+
+    }
+
+    override fun onBackPressed() {
+        val intent = Intent(Intent.ACTION_MAIN)
+        intent.addCategory(Intent.CATEGORY_HOME)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
+        super.onBackPressed()
     }
 }
