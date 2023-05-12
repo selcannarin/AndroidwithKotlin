@@ -31,8 +31,8 @@ class NotesAdapter (private val context: Context, private val notesList: ArrayLi
     override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
         val note = notesList[position]
         holder.textViewStudent.text = note.student_name
-        holder.textViewNote1.text = note.note1.toString()
-        holder.textViewNote2.text = note.note2.toString()
+        holder.textViewNote1.text = (note.note1).toString()
+        holder.textViewNote2.text = (note.note2).toString()
 
         holder.cardViewNotes.setOnClickListener{
             val intent = Intent(context,NoteDetailsActivity::class.java)

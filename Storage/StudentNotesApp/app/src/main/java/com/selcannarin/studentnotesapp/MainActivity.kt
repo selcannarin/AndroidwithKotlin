@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.selcannarin.studentnotesapp.databinding.ActivityMainBinding
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var notesList: ArrayList<Notes>
     private lateinit var adapter: NotesAdapter
+    private lateinit var dbHelper: NotesDbHelper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -21,7 +23,13 @@ class MainActivity : AppCompatActivity() {
         binding.recyclerView.setHasFixedSize(true)
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
-        notesList = ArrayList<Notes>()
+        dbHelper = NotesDbHelper(this)
+       // Notesdao().addNote(dbHelper, "Selcan Narin", 12,78)
+
+        notesList = Notesdao().allNotes(dbHelper)
+        //notesList = ArrayList<Notes>()
+        //val n1 = Notes(2,"selcna",23,323)
+        //notesList.add(n1)
 
         adapter = NotesAdapter(this,notesList)
         binding.recyclerView.adapter = adapter
@@ -40,4 +48,5 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
         super.onBackPressed()
     }
+
 }
