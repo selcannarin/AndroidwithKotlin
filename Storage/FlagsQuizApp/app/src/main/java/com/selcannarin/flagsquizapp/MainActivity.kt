@@ -1,5 +1,6 @@
 package com.selcannarin.flagsquizapp
 
+import DatabaseCopyHelper
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,8 +14,24 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        copyDatabase()
+
         binding.buttonStart.setOnClickListener {
             startActivity(Intent(this@MainActivity,QuizActivity::class.java))
         }
+    }
+
+    fun copyDatabase(){
+
+        val copyHelper = DatabaseCopyHelper(this)
+
+        try{
+            copyHelper.createDataBase()
+            copyHelper.openDataBase()
+
+        }catch (e:Exception){
+            e.printStackTrace()
+        }
+
     }
 }
